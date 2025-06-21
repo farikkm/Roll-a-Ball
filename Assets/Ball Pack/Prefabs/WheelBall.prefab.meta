@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 64feaa7b7b780fb4f92198f6fb2e1bdb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 446
+  packageName: Ball Pack
+  packageVersion: 2.0
+  assetPath: Assets/Ball Pack/Prefabs/WheelBall.prefab
+  uploadId: 738768

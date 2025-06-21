@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 12ab7dfd39045c04a914a2ac9e59b02f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 446
+  packageName: Ball Pack
+  packageVersion: 2.0
+  assetPath: Assets/Ball Pack/Prefabs/BuckyBall.prefab
+  uploadId: 738768

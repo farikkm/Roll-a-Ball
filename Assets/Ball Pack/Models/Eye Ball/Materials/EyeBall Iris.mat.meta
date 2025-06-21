@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c02ec0fa0ca2b5447b9d40c6e02bf5e9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 446
+  packageName: Ball Pack
+  packageVersion: 2.0
+  assetPath: Assets/Ball Pack/Models/Eye Ball/Materials/EyeBall Iris.mat
+  uploadId: 738768

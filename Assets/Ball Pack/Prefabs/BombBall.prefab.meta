@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3b5a28db09a60f0479da5f8cdf8d7039
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 446
+  packageName: Ball Pack
+  packageVersion: 2.0
+  assetPath: Assets/Ball Pack/Prefabs/BombBall.prefab
+  uploadId: 738768
