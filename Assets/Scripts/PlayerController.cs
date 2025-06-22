@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private int score;
 
     readonly string pickUpGameObjectTag = "PickUp";
+    readonly string enemyGameObjectTag = "Enemy";
 
     [SerializeField] private int speed;
 
@@ -55,6 +56,17 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             score++;
             SetScoreText(score);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(enemyGameObjectTag))
+        {
+            Debug.Log(gameObject);
+            Destroy(gameObject);
+            winText.text = "You lose!";
+            winText.gameObject.SetActive(true);
         }
     }
 }
