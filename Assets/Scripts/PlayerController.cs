@@ -1,17 +1,36 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI winText;
+
     private float axesX;
     private float axesY;
+    private int score;
+
+    readonly string pickUpGameObjectTag = "PickUp";
 
     [SerializeField] private int speed;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        score = 0;
+        SetScoreText(score);
+        winText.gameObject.SetActive(false);
+    }
+
+    void SetScoreText(int score)
+    {
+        scoreText.text = "Score: " + score.ToString();
+        if (score >= 12)
+        {
+            winText.gameObject.SetActive(true);
+        }
     }
 
     void OnMove(InputValue movementValue)
@@ -31,6 +50,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.SetActive(false);
+        if (other.gameObject.CompareTag(pickUpGameObjectTag))
+        {
+            other.gameObject.SetActive(false);
+            score++;
+            SetScoreText(score);
+        }
     }
 }
